@@ -1,176 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overall Standings</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #e0eafc, #cfdef3);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-wrap:wrap;
-        }
-        .table-container {
-            width: 90%;
-            max-width: 800px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        .header {
-            background: #1a1a40;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background: #232350;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-        tr:hover {
-            background: #f1f1f1;
-        }
-        .total {
-            font-weight: bold;
-            color: #f39c12;
-        }
-        .rank {
-            font-weight: bold;
-            color: #3498db;
-        }
-    </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXPBQEG3S5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DXPBQEG3S5');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Overall Standings</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: #1a1a40;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #232350;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+.rank {
+  font-weight: bold;
+}
+
+.total {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+/* Podium */
+.gold { background: #fff4cc !important; }
+.silver { background: #f0f0f0 !important; }
+.bronze { background: #f5e0d0 !important; }
+</style>
 </head>
+
 <body>
-    <h1 style="width:100%;text-align: center;margin:0">ATJEDIA OPEN TOURNAMENT FINAL DAY</h1>
-    <div class="table-container">
-        <div class="header">Overall Standings</div>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Player</th>
-                    <th>R1</th>
-                    <th>R2</th>
-                    <th>R3</th>
-                    <th>R4</th>
-                    <th>R5</th>
-                    <th>R6</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="rank">1</td>
-                    <td>amerrr</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td class="total">32</td>
-                </tr>
-                <tr>
-                    <td class="rank">2</td>
-                    <td>putt</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td class="total">30</td>
-                </tr>
-                <tr>
-                    <td class="rank">3</td>
-                    <td>Get Good</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td class="total">23</td>
-                </tr>
-                <tr>
-                    <td class="rank">4</td>
-                    <td>Mahadaya Gita</td>
-                    <td>8</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td class="total">22</td>
-                </tr>
-                <tr>
-                    <td class="rank">5</td>
-                    <td>Engkaaay</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td class="total">22</td>
-                </tr>
-                <tr>
-                    <td class="rank">6</td>
-                    <td>DoctoringWho</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td class="total">20</td>
-                </tr>
-                <tr>
-                    <td class="rank">7</td>
-                    <td>VENSAGI</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td class="total">17</td>
-                </tr>
-                <tr>
-                    <td class="rank">8</td>
-                    <td>KonxOmPax</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td class="total">12</td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
-    </div>
+
+<h1>Game Fun League Season 1</h1>
+
+<div class="table-container">
+  <div class="header">Overall Standings</div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>W1 G1</th>
+        <th>W1 G2</th>
+        <th>W1 G3</th>
+        <th>W2 G1</th>
+        <th>W2 G2</th>
+        <th>W2 G3</th>
+        <th>W3 G1</th>
+        <th>W3 G2</th>
+        <th>W3 G3</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="standings"></tbody>
+  </table>
+</div>
+
+<script>
+const players = [
+  { name: "A", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "B", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "C", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "D", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "E", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "F", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "G", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "H", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "I", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "J", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "K", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "L", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "M", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "N", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "O", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "P", scores: [0,0,0,0,0,0,0,0,0] },
+];
+
+// Calculate totals
+players.forEach(p => {
+  p.total = p.scores.reduce((a,b) => a + b, 0);
+});
+
+// Sort by total DESC
+players.sort((a,b) => b.total - a.total);
+
+// Render table
+const tbody = document.getElementById("standings");
+let rank = 1;
+let lastTotal = null;
+
+players.forEach((p, index) => {
+  if (p.total !== lastTotal) rank = index + 1;
+  lastTotal = p.total;
+
+  const tr = document.createElement("tr");
+
+  if (rank === 1) tr.classList.add("gold");
+  else if (rank === 2) tr.classList.add("silver");
+  else if (rank === 3) tr.classList.add("bronze");
+
+  tr.innerHTML = `
+    <td class="rank">${rank}</td>
+    <td>${p.name}</td>
+    ${p.scores.map(s => `<td>${s}</td>`).join("")}
+    <td class="total">${p.total}</td>
+  `;
+
+  tbody.appendChild(tr);
+});
+</script>
+
 </body>
 </html>
