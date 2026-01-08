@@ -81,6 +81,38 @@ tbody tr:hover {
 .gold { background: #fff4cc !important; }
 .silver { background: #f0f0f0 !important; }
 .bronze { background: #f5e0d0 !important; }
+
+.page-layout {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ad-container {
+  width: 160px;
+  min-height: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.ad-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive: hide ads on small screens */
+@media (max-width: 900px) {
+  .ad-container {
+    display: none;
+  }
+}
+  
 </style>
 </head>
 
@@ -88,47 +120,62 @@ tbody tr:hover {
 
 <h1>Game Fun League Season 1</h1>
 
-<div class="table-container">
-  <div class="header">Overall Standings</div>
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Player</th>
-        <th>W1 G1</th>
-        <th>W1 G2</th>
-        <th>W1 G3</th>
-        <th>W2 G1</th>
-        <th>W2 G2</th>
-        <th>W2 G3</th>
-        <th>W3 G1</th>
-        <th>W3 G2</th>
-        <th>W3 G3</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody id="standings"></tbody>
-  </table>
+<div class="page-layout">
+
+  <!-- Left Ad -->
+  <div class="ad-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jhUcib6yhc5CxnoCa7_lbiq7cZDgKhcl5Ws3ByLZopOMnv85" alt="Advertisement">
+  </div>
+
+  <!-- Table -->
+  <div class="table-container">
+    <div class="header">Overall Standings</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>W1 G1</th>
+          <th>W1 G2</th>
+          <th>W1 G3</th>
+          <th>W2 G1</th>
+          <th>W2 G2</th>
+          <th>W2 G3</th>
+          <th>W3 G1</th>
+          <th>W3 G2</th>
+          <th>W3 G3</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="standings"></tbody>
+    </table>
+  </div>
+
+  <!-- Right Ad -->
+  <div class="ad-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jhUcib6yhc5CxnoCa7_lbiq7cZDgKhcl5Ws3ByLZopOMnv85" alt="Advertisement">
+  </div>
+
 </div>
 
 <script>
 const players = [
-  { name: "A", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "B", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "C", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "D", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "E", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "F", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "G", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "H", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "I", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "J", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "K", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "L", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "M", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "N", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "O", scores: [0,0,0,0,0,0,0,0,0] },
-  { name: "P", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "RPM", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Enif", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Jhinderella", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Forsakenat", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Nietra", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "CradesJoestar", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Salaz4ar", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "udoN", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "QueenErpin", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "xzvywni", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "LifeBeat", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "ElRatoxdd", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "mage", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Aling", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Jocan", scores: [0,0,0,0,0,0,0,0,0] },
+  { name: "Bybay", scores: [0,0,0,0,0,0,0,0,0] },
 ];
 
 // Calculate totals
